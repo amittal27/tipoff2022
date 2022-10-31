@@ -552,6 +552,7 @@ img {
     background: #ffffff;
 }
 
+
 .portfolio .portfolio-item {
     margin-bottom: 30px;
     overflow: hidden;
@@ -564,6 +565,11 @@ img {
     
 }
 
+.portfolio-img:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
 .portfolio .portfolio-item .portfolio-link {
     position: absolute;
     display: flex;
@@ -573,7 +579,6 @@ img {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(255, 111, 97, .95);
     transition: 0.3s;
     opacity: 0;
 }
@@ -586,10 +591,12 @@ img {
     padding: 6px 0;
     text-align: center;
     font-size: 18px;
-    color: #FF6F61;
+    opacity:0.2;
+    filter:alpha(opacity=20); 
     background: #ffffff;
     border-radius: 4px;
 }
+ 
 
 .portfolio .portfolio-item:hover .portfolio-link {
     opacity: 1;

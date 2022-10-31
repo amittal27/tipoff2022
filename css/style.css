@@ -1,9 +1,24 @@
+@font-face {
+    font-family: 'Spooky';
+    src: url('../fonts/SpookyRegular.ttf');
+}
+
+@font-face {
+    font-family: 'Jinkeez';
+    src: url('../fonts/Jinkeez.ttf');
+}
+
+@font-face {
+    font-family: '1722';
+    src: url('../fonts/1722Regular.ttf');
+}
+
 /**************************************/
 /************ General CSS *************/
 /**************************************/
 body {
     color: #555555;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Times New Roman', sans-serif;
     background: #ffffff;
 }
 
@@ -33,7 +48,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Jinkeez', monospace;
     font-weight: 700;
     color: #666666;
     margin: 0 0 15px 0;
@@ -189,18 +204,22 @@ img {
     background-size: cover;
 }
 
+.header .tipoff {
+    font-size: 80px;
+}
+
 .header h1 {
     position: relative;
     display: inline-block;
     color: #ffffff;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 40px;
     padding-bottom: 45px;
 }
 
-.header h1 span {
+.header h1 .text {
     color: #111111;
 }
 

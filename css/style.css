@@ -13,6 +13,11 @@
     src: url('../fonts/1722Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Taurunum';
+    src: url('../fonts/Taurunum.ttf');
+}
+
 /**************************************/
 /************ General CSS *************/
 /**************************************/

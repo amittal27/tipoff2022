@@ -355,7 +355,7 @@ img {
 }
 
 .about .about-img img {
-    width: 100%;
+    width: 700px;
 }
 
 .about .about-content {
@@ -413,13 +413,20 @@ img {
 .team .team-item {
     margin-bottom: 30px;
     overflow: hidden;
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto;  
+    text-align: center;
 }
 
 .team .team-item .team-img {
     position: relative;
     overflow: hidden;
     border-radius: 4px;
-    
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto;  
+    text-align: center;
 }
 
 .team .team-item .team-link {
@@ -431,7 +438,7 @@ img {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(255, 111, 97, .95);
+    background:transparent;
     transition: 0.3s;
     opacity: 0;
 }
@@ -444,10 +451,15 @@ img {
     padding: 6px 0;
     text-align: center;
     font-size: 16px;
-    color: #FF6F61;
     background: #ffffff;
     border-radius: 4px;
 }
+
+
+.team .team-item .team-img:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+}  
 
 .team .team-item:hover .team-link {
     opacity: 1;
@@ -467,6 +479,7 @@ img {
     width: 100%;
     padding-top: 15px;
 }
+
 
 .team .team-item .team-info h4 {
     font-size: 18px;

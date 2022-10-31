@@ -24,11 +24,11 @@
 body {
     color: #555555;
     font-family: 'Times New Roman', sans-serif;
-    background: #ffffff;
+    background: ;
 }
 
 a {
-    color: #FF6F61;
+    color: #F57200;
     transition: 0.3s;
 }
 
@@ -70,8 +70,6 @@ img {
     border-radius: 4px;
 }
 
-
-
 /**************************************/
 /********** Back to Top CSS ***********/
 /**************************************/
@@ -92,11 +90,11 @@ img {
 }
 
 .back-to-top i {
-    color: #FF6F61;
+    color: #F57200;
 }
 
 .back-to-top:hover {
-    background: #FF6F61;
+    background: #F57200;
 }
 
 .back-to-top:hover i {
@@ -114,7 +112,7 @@ img {
     height: 100px;
     padding: 20px 0;
     background: transparent;
-    border-bottom: 1px solid #ff9085;
+    border-bottom: 1px solid #F57200;
     transition: all .3s;
     z-index: 999;
 }
@@ -122,7 +120,7 @@ img {
 #nav.nav-sticky {
     height: inherit;
     padding: 0;
-    background: #ffffff;
+    background: #201c1d;
     transition: all .3s;
     border-bottom: none;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
@@ -135,7 +133,7 @@ img {
 
 #nav.nav-sticky .navbar {
     transition: all .3s;
-    background: #ffffff !important;
+    background: #201c1d !important;
 }
 
 #nav .navbar-brand {
@@ -156,17 +154,17 @@ img {
 #nav.nav-sticky .nav-link:focus,
 #nav.nav-sticky .nav-link:hover,
 #nav.nav-sticky .nav-link.active {
-    color: #666666;
+    color: #fff;
 }
 
 #nav .nav-link:hover,
 #nav .nav-link.active {
-    color: #111111;
+    color: #F57200;
 }
 
 #nav.nav-sticky .nav-link:hover,
 #nav.nav-sticky .nav-link.active {
-    color: #FF6F61;
+    color: #F57200;
 }
 
 #nav .dropdown-menu {
@@ -196,8 +194,6 @@ img {
     }
 }
 
-
-
 /**************************************/
 /************* Header CSS *************/
 /**************************************/
@@ -205,12 +201,17 @@ img {
     position: relative;
     padding: 180px 0 100px 0;
     text-align: center;
-    background: linear-gradient( rgba(255, 111, 97, 0.95), rgba(255, 111, 97, 0.95) ), url(../img/header.jpg) no-repeat top center;
+    background: #201c1d;
     background-size: cover;
+    display: flex;
 }
 
 .header .tipoff {
     font-size: 80px;
+}
+
+.header img {
+    width: 500px;
 }
 
 .header h1 {
@@ -225,7 +226,7 @@ img {
 }
 
 .header h1 .text {
-    color: #111111;
+    color: #F57200;
 }
 
 .header h1::after {
@@ -235,29 +236,29 @@ img {
     height: 1px;
     left: 5%;
     bottom: 0;
-    background: #ff9085;
+    background: #F57200;
 }
 
 .header p {
     color: #ffffff;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     margin-bottom: 40px;
 }
 
-.header .btn {
+.btn {
     padding: 15px 35px;
-    color: #FF6F61;
+    color: #F57200;
     font-size: 22px;
     font-weight: 500;
     background: #ffffff;
 }
 
-.header .btn:hover {
+.btn:hover {
     background: #111111;
 }
 
-.header .btn i {
+.btn i {
     margin-right: 5px;
 }
 
@@ -281,7 +282,14 @@ img {
     }
 }
 
-
+.about .container,
+.team .container,
+.portfolio .container,
+.service .container,
+#nav .container {
+    border-bottom: solid;
+    border-color: white;
+}
 
 /**************************************/
 /******** Section Header CSS **********/
@@ -294,7 +302,7 @@ img {
 }
 
 .section-header h4 {
-    color: #FF6F61;
+    color: #fff;
     font-size: 18px;
     letter-spacing: 3px;
     margin-bottom: 5px;
@@ -302,7 +310,7 @@ img {
 
 .section-header h2 {
     display: inline-block;
-    color: #111111;
+    color: #F57200;
     font-size: 45px;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -315,7 +323,7 @@ img {
     height: 1px;
     left: calc(50% - 30px);
     bottom: 0;
-    background: #FF6F61;
+    background: #fff;
 }
 
 @media(max-width: 767.98px) {
@@ -338,15 +346,18 @@ img {
     }
 }
 
-
+.team .img-fluid {
+    max-width: initial !important;
+    height: 200px;
+}
 
 /**************************************/
 /************* About CSS **************/
 /**************************************/
 .about {
     position: relative;
-    padding: 100px 0;
-    background: #ffffff;
+    /* padding: 100px 0; */
+    background: #1E2D2F;
 }
 
 .about .about-img {
@@ -361,6 +372,7 @@ img {
 .about .about-content {
     position: relative;
     width: 100%;
+    text-align: center;
 }
 
 .about .about-content:first-child {
@@ -373,11 +385,17 @@ img {
     font-size: 30px;
     letter-spacing: 1px;
     text-transform: capitalize;
+    color: white;
+}
+
+.about .about-content h6 {
+    color: #F57200;
 }
 
 .about .about-content p {
     position: relative;
     font-size: 18px;
+    color:white;
 }
 
 .about .btn {
@@ -385,11 +403,11 @@ img {
     font-size: 14px;
     letter-spacing: 1px;
     color: #ffffff;
-    background: #FF6F61;
+    background: #F57200;
 }
 
 .about .btn:hover {
-    color: #FF6F61;
+    color: #F57200;
     background: #111111;
 }
 
@@ -399,23 +417,21 @@ img {
     }
 }
 
-
-
 /**************************************/
 /*************** Team CSS *************/
 /**************************************/
 .team {
     position: relative;
-    padding: 100px 0 70px 0;
-    background: #f6f8fa;
+    padding: 50px 0 70px 0;
+    background: #1E2D2F;
 }
 
 .team .team-item {
     margin-bottom: 30px;
     overflow: hidden;
     display: block;  
-    margin-left: auto;  
-    margin-right: auto;  
+    /* margin-left: auto;  
+    margin-right: auto;   */
     text-align: center;
 }
 
@@ -484,6 +500,7 @@ img {
 .team .team-item .team-info h4 {
     font-size: 18px;
     margin-bottom: 10px;
+    color:white;
 }
 
 .team .team-item .team-info p {
@@ -491,6 +508,7 @@ img {
     font-size: 14px;
     font-weight: 300;
     text-transform: uppercase;
+    color: #F57200;
 }
 
 
@@ -500,8 +518,8 @@ img {
 /**************************************/
 .service {
     position: relative;
-    padding: 100px 0 40px 0;
-    background: #ffffff;
+    padding: 50px 0 40px 0;
+    background: #1E2D2F;
 }
 
 .service .row {
@@ -517,14 +535,19 @@ img {
     width: 100%;
 }
 
-/* .service h2 {
-    font-size:30px;
-} */
-
 .service .service-detail h3 {
     font-size: 30px;
     letter-spacing: 1px;
     text-transform: capitalize;
+    color: #FFF;
+}
+
+.list-group {
+    color: white;
+}
+
+.list-group-item {
+    background-color: rgba(62, 163, 100, 0.8);
 }
 
 .service .service-detail h3 i {
@@ -538,59 +561,13 @@ img {
 }
 
 
-
-/**************************************/
-/********* Call To Action CSS *********/
-/**************************************/
-.call-to-action {
-    position: relative;
-    padding: 100px 0;
-    background: #FF6F61;
-}
-
-.call-to-action .container {
-    max-width: 700px;
-}
-
-.call-to-action .section-header h4 {
-    color: #ffffff;
-}
-
-.call-to-action .section-header h2::after {
-    background: #111111;
-}
-
-.call-to-action .section-header p {
-    color: #ffffff;
-}
-
-.call-to-action .btn {
-    padding: 15px 30px;
-    color: #FF6F61;
-    font-size: 18px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    background: #ffffff;
-}
-
-.call-to-action .btn:hover {
-    color: #FF6F61;
-    background: #111111;
-}
-
-.call-to-action .btn i {
-    margin-right: 5px;
-}
-
-
-
 /**************************************/
 /************ Portfolio CSS ***********/
 /**************************************/
 .portfolio {
     position: relative;
-    padding: 100px 0 70px 0;
-    background: #ffffff;
+    /* padding: 50px 0 70px 0; */
+    background: #1E2D2F;
 }
 
 
@@ -670,122 +647,25 @@ img {
     text-transform: uppercase;
 }
 
-
-
-/**************************************/
-/************* Pricing CSS ************/
-/**************************************/
-.pricing {
-    position: relative;
-    padding: 100px 0 70px 0;
-    background: #f6f8fa;
-}
-
-.pricing .price-content {
-    position: relative;
-    background: #ffffff;
-    text-align: center;
-    margin-bottom: 30px;
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.pricing .price-plan {
-    position: relative;
-    background: #FF6F61;
-    padding: 30px;
-}
-
-.pricing .price-plan h3 {
-    color: #111111;
-    font-size: 35px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-}
-
-.pricing .price-plan p {
-    color: #ffffff;
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.pricing .price-plan i {
-    color: #ffffff;
-    font-size: 45px;
-}
-
-.pricing .price-details {
-    padding: 30px 0;
-    font-size: 16px;
-    list-style: none;
-    text-align: center;
-}
-
-.pricing .price-details li {
-    padding: 6px 30px;
-    border-bottom: 1px solid #f6f8fa;
-}
-
-.pricing .price-details li:last-child {
-    border: none;
-}
-
-.pricing .price-content .btn {
+.btn {
     margin-bottom: 30px;
     padding: 10px 30px;
     color: #ffffff;
-    background: #FF6F61;
+    background: #F57200;
     border: none;
 }
 
-.pricing .price-content .btn:hover {
-    color: #FF6F61;
+.btn:hover {
+    color: #F57200;
     background: #111111;
 }
-
-
-
-/**************************************/
-/************* Contact CSS ************/
-/**************************************/
-.contact {
-    position: relative;
-    padding: 100px 0;
-    text-align: center;
-    background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7) ), url(../img/contact.jpg) no-repeat top left;
-}
-
-.contact .contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact .form-control:focus {
-    border: 1px solid #FF6F61;
-    box-shadow: none;
-}
-
-.contact .btn {
-    display: block;
-    width: 100%;
-    color: #ffffff;
-    background: #FF6F61;
-}
-
-.contact .btn:hover {
-    color: #FF6F61;
-    background: #111111;
-}
-
-
 
 /**************************************/
 /************* Footer CSS *************/
 /**************************************/
 .footer {
     position: relative;
-    background: #FF6F61;
+    background: #201c1d;
 }
 
 .footer .footer-top {
@@ -849,36 +729,11 @@ img {
 .footer .subscribe {
     position: relative;
     width: 100%;
+    color: white;
 }
 
-.footer .subscribe .form-control {
-    float: left;
-    width: calc(100% - 115px);
-    margin-right: 15px;
-    border: none;
-}
-
-.footer .subscribe .form-control:focus {
-    box-shadow: none;
-    color: #ffffff;
-    background: #111111;
-}
-
-.footer .subscribe .btn {
-    width: 100px;
-    color: #FF6F61;
-    background: #111111;
-}
-
-.footer .subscribe .btn:hover {
-    color: #FF6F61;
-    background: #ffffff;
-}
-
-.footer .subscribe label {
-    margin-top: 5px;
-    font-size: 14px;
-    color: #ffffff;
+.footer .subscribe li {
+    list-style-type: none;
 }
 
 .footer .footer-bottom {
@@ -897,13 +752,13 @@ img {
 
 .footer .copyright a,
 .footer .credit a {
-    color: #111111;
+    color: white;
     font-weight: 600;
 }
 
 .footer .copyright a:hover,
 .footer .credit a:hover {
-    color: #ffffff;
+    color: #F57200;
 }
 
 @media (max-width: 768px) {
